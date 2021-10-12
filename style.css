@@ -53,7 +53,7 @@ header .icons .fa-search {
     height: 100%;
     max-width: 1000px;
 }
-.info {
+body > .info {
     padding: var(--padding);
 }
 li {
@@ -88,71 +88,93 @@ button, button:focus {
     color: var(--gray-dark-color);
 }
 
-.mark {
+.info .mark {
     display: flex;
     justify-content: space-around;
     margin: var(--padding) 0;
 }
-.mark button {
+.info .mark button {
     display: flex;
     flex-direction: column;
     font-size: var(--font-small);
     color: var(--gray-dark-color);
 }
-.mark button i {
+.info .mark button i {
     margin: 0 auto;
     margin-bottom: calc(var(--padding) / 2);
     font-size: 16px;
 }
-.mark .fa-thumbs-up {
+.info .mark .fa-thumbs-up {
     color: var(--blue-color);
 }
-.channel {
+.info .channel {
     display: flex;
     justify-content: space-between;
     border-top: 1px solid var(--gray-light-color);
     border-bottom: 1px solid var(--gray-light-color);
 }
-.channel .metadata {
+.info .channel .metadata {
     display: flex;
     align-items: center;
 }
-.channel .metadata img {
+.info .channel .metadata img {
     height: var(--avatar-size);
     width: var(--avatar-size);
     border-radius: 50%;
 }
-.channel .metadata .info {
+.info .channel .metadata .info {
     display: flex;
     flex-direction: column;
 }
-.channel .metadata .info .name {
+.info .channel .metadata .info .name {
     font-size: var(--font-medium);
 }
-.channel .metadata .info .subscribers {
+.info .channel .metadata .info .subscribers {
     font-size: var(--font-small);
     color: var(--gray-dark-color);
 }
-.channel .subscribe {
+.info .channel .subscribe {
     text-transform: uppercase;
     color: var(--red-color);
     font-size: var(--font-medium);
 }
-.title4 {
-    padding: 8px 14px;
+.Upnext {
+    padding: var(--padding);
 }
-.item {
+.Upnext .title4 {
+    font-size: var(--font-medium);
+    color: var(--gray-dark-color);
+    margin-bottom: calc(var(--padding) / 2);
+}
+
+.Upnext .item {
     display: flex;
+    margin-top: var(--padding);
 }
-.item img {
-    width: 100px;
-    height: 100px;
+.Upnext .item .img {
+    flex: 1 1 35%;
 }
-.item .info {
+.Upnext .item .img img {
+    width: 100%;
+}
+.Upnext .item .info {
+    flex: 1 1 60%;
+}
+.Upnext .item .moreBtn {
+    flex: 1 1 5%;
+}
+.Upnext .item .info {
     display: flex;
     flex-direction: column;
 }
-.item .views {
-    display: flex;
-    flex-direction: column;
+.Upnext .item .info .title {
+    font-size: var(--font-small);
+}
+.Upnext .item .info .name {
+    font-size: var(--font-micro);
+    color: var(--gray-dark-color);
+}
+.Upnext .item .info .views {
+    font-size: var(--font-micro);
+    color: var(--gray-dark-color);
 }
