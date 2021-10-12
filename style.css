@@ -8,7 +8,7 @@
     --gray-light-color:#e0e0e0;
 
     /* size */
-    --side-padding: 12px;
+    --padding: 12px;
     --avatar-size: 36px;
 
     /* font size */
@@ -17,6 +17,11 @@
     --font-small: 12px;
     --font-micro: 10px;
 }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body {
     padding: 0;
     margin: 0;
@@ -24,18 +29,18 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 8px 12px;
-    background-color: black;
-    color: white;
+    padding: var(--padding);
+    background-color: var(--black-color);
+    color: var(--white-color);
 }
 header .logo {
-    font-size: 20px;
+    font-size: var(--font-large);
 }
-header .fa-youtube {
-    color: red;
+header .logo i {
+    color: var(--red-color);
 }
-header .fa-search {
-    padding-right: 8px;
+header .icons .fa-search {
+    padding-right: var(--padding);
 }
 video {
     width: 100%;
